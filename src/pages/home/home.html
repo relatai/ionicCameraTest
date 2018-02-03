@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="card-background-page" padding>
+  <h2>Recursos Nativos com Ionic 3</h2>
+  <button (click)="abreCamera()" ion-button block>Ativar a Câmera</button>
+  <button (click)="recuperaImagem()" ion-button block>Abrir um Imagem</button>
+
+  <ion-card>
+    <img src="{{base64Image}}"/>
+    <div class="card-title">Sua foto Ionica</div>
+  </ion-card>
+
+</ion-content>
